@@ -23,3 +23,6 @@ System.out.println(totp);
 System.out.println(auth.validateTOTP(secret, totp));
 ```
 
+## License
+This project is licensed under the [Apache 2 License](http://www.apache.org/licenses/LICENSE-2.0).
+
