@@ -65,7 +65,8 @@ public class TOTPAuthenticator {
 
 	/**
 	 * Decoder is used to decode the string to byte array when users provide a
-	 * string format key instead of byte array format. The default value is SHA1Decoder.
+	 * string format key instead of byte array format. The default value is
+	 * SHA1Decoder.
 	 */
 	private Decoder decoder;
 
@@ -164,7 +165,7 @@ public class TOTPAuthenticator {
 	 * 
 	 */
 	public boolean validateTOTP(byte[] key, String totpFromProver) {
-		if (isTotp(totpFromProver)) {
+		if (isTOTP(totpFromProver)) {
 			final long receivedTimeStepWindow = getTimeStepWindowFromTimestamp(System.currentTimeMillis());
 			for (int i = 0 - allowedPastValidationWindows; i <= allowedFutureValidationWindows; i++) {
 				String totpCalculated = calculateTOTP(key, receivedTimeStepWindow + i);
@@ -175,12 +176,12 @@ public class TOTPAuthenticator {
 		}
 		return false;
 	}
-	
-	public String generateTOTP(String key){
+
+	public String generateTOTP(String key) {
 		return generateTOTP(decoder.decode(key));
 	}
-	
-	public boolean validateTOTP(String key, String totpFromProver){
+
+	public boolean validateTOTP(String key, String totpFromProver) {
 		return validateTOTP(decoder.decode(key), totpFromProver);
 	}
 
@@ -218,18 +219,10 @@ public class TOTPAuthenticator {
 		return (milliSeconds - TIME_START) / TimeUnit.SECONDS.toMillis(timeStepSize);
 	}
 
-	private boolean isTotp(String str) {
-		if (str != null) {
-			if (str.length() == totpLength) {
-				for (char c : str.toCharArray()) {
-					if (!Character.isDigit(c)) {
-						return false;
-					}
-				}
-				return true;
-			}
-		}
-		return false;
+	private boolean isTOTP(String str) {
+		if (str.length() != totpLength)
+			return false;
+		return str.matches("\\d+");
 	}
 
 	public int getTotpLength() {

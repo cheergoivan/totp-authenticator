@@ -22,5 +22,4 @@ public class TOTPAuthenticatorTest {
 		}
 		assertTrue(!auth.validateTOTP(secret, totp));
 	}
-
 }
