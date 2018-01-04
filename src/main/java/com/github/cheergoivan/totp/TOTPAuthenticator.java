@@ -154,7 +154,7 @@ public class TOTPAuthenticator {
 	 * receiving timestamp but also the past time-steps that are within the
 	 * allowedValidationWinows.
 	 * 
-	 * @see <a href="https://tools.ietf.org/html/rfc6238#section-5.2" />
+	 * @see <a href="https://tools.ietf.org/html/rfc6238#section-5.2">rfc6238</a>
 	 * 
 	 * @param key
 	 *            the secret key in binary format.
