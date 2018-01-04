@@ -10,6 +10,12 @@
 	<name>totp-authenticator</name>
 	<url>http://maven.apache.org</url>
 
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -35,4 +41,27 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/cheergoivan/totp-authenticator</url>
+		<connection>https://github.com/cheergoivan/totp-authenticator.git</connection>
+		<developerConnection>https://github.com/cheergoivan</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<name>cheergoivan</name>
+			<email>xiweipen@sina.com</email>
+			<url>https://github.com/cheergoivan</url>
+		</developer>
+	</developers>
+
 </project>
