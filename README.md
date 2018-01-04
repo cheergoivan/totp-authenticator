@@ -8,7 +8,7 @@ A Java implemetation of [TOTP(time-base one-time password)](https://en.wikipedia
 ## Quick start
 ### Add Maven dependency
 ```xml
-  <dependency>
+<dependency>
    <groupId>com.paypal.springboot</groupId>
    <artifactId>resteasy-spring-boot-starter</artifactId>
    <version>2.3.4-RELEASE</version>
