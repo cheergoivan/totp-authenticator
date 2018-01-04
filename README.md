@@ -9,9 +9,9 @@ A Java implementation of [TOTP(time-base one-time password)](https://en.wikipedi
 ### Add Maven dependency
 ```xml
 <dependency>
-   <groupId>com.paypal.springboot</groupId>
-   <artifactId>resteasy-spring-boot-starter</artifactId>
-   <version>2.3.4-RELEASE</version>
+   <groupId>com.github.cheergoivan</groupId>
+   <artifactId>totp-authenticator</artifactId>
+   <version>1.0</version>
 </dependency>
 ```
 ### Usage
