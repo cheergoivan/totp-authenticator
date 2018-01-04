@@ -1,12 +1,12 @@
 package com.iplay.totp;
 
-public enum HAMCHashAlgorithm {
+public enum HMACHashAlgorithm {
 
-	SHA1("HmacSHA1");
+	SHA_1("HmacSHA1"), SHA_256("HmacSHA256"), SHA_512("HmacSHA512");
 	
 	private String algorithm;
 
-	private HAMCHashAlgorithm(String algorithm) {
+	private HMACHashAlgorithm(String algorithm) {
 		this.algorithm = algorithm;
 	}
 
