@@ -1,4 +1,4 @@
-package com.iplay.totp;
+package com.github.cheergoivan.totp;
 
 import static org.junit.Assert.assertTrue;
 
