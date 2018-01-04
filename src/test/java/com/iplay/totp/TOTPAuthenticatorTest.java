@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
+import com.github.cheergoivan.totp.TOTPAuthenticator;
+
 public class TOTPAuthenticatorTest {
 
 	@Test

@@ -1,4 +1,4 @@
-package com.iplay.totp;
+package com.github.cheergoivan.totp;
 
 public enum HMACHashAlgorithm {
 

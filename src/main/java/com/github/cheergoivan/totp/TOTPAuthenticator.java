@@ -1,4 +1,4 @@
-package com.iplay.totp;
+package com.github.cheergoivan.totp;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -8,8 +8,8 @@ import java.util.concurrent.TimeUnit;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.iplay.totp.decoder.Decoder;
-import com.iplay.totp.decoder.SHA1Decoder;
+import com.github.cheergoivan.totp.decoder.Decoder;
+import com.github.cheergoivan.totp.decoder.SHA1Decoder;
 
 /**
  * 

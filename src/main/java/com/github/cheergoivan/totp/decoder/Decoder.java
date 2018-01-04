@@ -1,4 +1,4 @@
-package com.iplay.totp.decoder;
+package com.github.cheergoivan.totp.decoder;
 
 public interface Decoder {
 	byte[] decode(String input);
