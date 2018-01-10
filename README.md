@@ -3,7 +3,7 @@ A Java implementation of [TOTP(time-base one-time password)](https://en.wikipedi
 
 ## Features
 * Generate TOTP with a secret key
-* Validate TOTP  according to the secret key and the totp from prover
+* Validate TOTP according to the secret key and the totp from prover
 
 ## Quick start
 ### Add Maven dependency
