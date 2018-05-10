@@ -22,6 +22,8 @@ String totp = auth.generateTOTP(secret);
 System.out.println(totp);
 System.out.println(auth.validateTOTP(secret, totp));
 ```
+### Spring Boot Starter
+I provide a spring boot starter for totp-authenticator, please check this project: [totp-authenticator-spring-boot-starter](https://github.com/cheergoivan/totp-authenticator-spring-boot-starter)
 
 ## License
 This project is licensed under the [Apache 2 License](http://www.apache.org/licenses/LICENSE-2.0).
